@@ -15,7 +15,7 @@
 	  	border: 0px;
 	  	background-color: white;
 	  	width: 1200px;
-	  	height: 1200px;
+	  	height: 1000px;
 	  	margin: 100px auto;
 	  	overflow: hidden; /* hide nested elements when it is outside the stage */
 	  	position: relative;
@@ -31,32 +31,49 @@
 }
 .letter.s {
 	width: 100px;
+	animation: move_letter_s 2s forwards;
 	
 }
 .letter.u {
 	width: 100px;
+	animation: move_letter_u 2s forwards;
+	animation-delay: 1s;
 }
 .letter.b {
 	width: 100px;
+	animation: move_letter_b 2s forwards;
+	animation-delay: 2s;
 }
 .letter.s2 {
 	width: 100px;
+	animation: move_letter_ss 2s forwards;
+	animation-delay: 3s;
 }
 .letter.i {
 	width: 100px;
+	animation: move_letter_i 2s forwards;
+	animation-delay: 4s;
 }
 .letter.d {
 	width: 100px;
+	animation: move_letter_d 2s forwards;
+	animation-delay: 5s;
 }
 .letter.i2 {
 	width: 100px;
+	animation: move_letter_ii 2s forwards;
+	animation-delay: 6s;
 }
 .letter.z {
 	width: 100px;
+	animation: move_letter_z 2s forwards;
+	animation-delay: 7s;
 }
 .letter.e {
 	width: 100px;
 	margin:15px;
+	animation: move_letter_e 2s forwards;
+	animation-delay: 8s;
 }
 
 .letter img {
@@ -95,44 +112,241 @@
 .junkfood.pizza  {
 	width: 100px;
 	margin:-5px;
+	animation:move_pizza 2s  forwards;
+	animation-delay: 1.6s;
 	
 }
 .junkfood.pop  {
 	width: 100px;
+	animation:move_pop 2s  forwards;
+	animation-delay: 2.6s;
 	
 }
 .junkfood.cookie  {
 	width: 100px;
+	animation:move_cookie 2s  forwards;
+	animation-delay: 3.6s;
 	
 }
 .junkfood.soda  {
 	width: 100px;
+	animation:move_soda 2s  forwards;
+	animation-delay: 4.6s;
 	
 }
 .junkfood.icecream  {
 	width: 100px;
-	
-	
+	animation:move_icecream 2s  forwards;
+	animation-delay: 5.6s;
 }
 .junkfood.hotdog  {
 	width: 100px;
 	margin:7px;
+	animation:move_hotdog 2s  forwards;
+	animation-delay: 6.6s;
 	
 }
 .junkfood.hamburger  {
 	width: 100px;
+	animation:move_hamburger 2s  forwards;
+	animation-delay: 7.6s;
 	
 }
 .junkfood.fries  {
 	width: 100px;
+	animation:move_fries 2s  forwards;
+	animation-delay: 8.6s;
 	
 }
 .junkfood.donut  {
 	width: 100px;
+	animation:move_donut 2s  forwards;
+	animation-delay: 9.6s;
 	
 }  
+.startover {
+	width: 10px;
+	align:right;
+	animation:startover 1s forwards;
+	animation-delay: 10.5s;
+
+}
+
+@keyframes move_letter_s {
+  from {
+    transform: translate(0,0) rotate(0deg);
+  }
+  to {
+    transform: translate(0,525px) rotate(80deg);
+  }
+
+}
+
+@keyframes move_letter_u {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(180deg);
+	}
+}
+@keyframes move_letter_b {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-90deg);
+
+	}
+}
+@keyframes move_letter_ss {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-57deg);
+
+	}
+
+}
+@keyframes move_letter_i {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-94deg);
+
+	}
+
+}
+@keyframes move_letter_d {
+	from {
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-87deg);
+
+	}
+
+}
+@keyframes move_letter_ii {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(180deg);
+	}
+}
+@keyframes move_letter_z {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-84deg);
+	}
+}
+@keyframes move_letter_e {
+	from{
+		transform: translate(0,0) rotate(0deg);
+	}
+	to {
+		transform: translate(0,525px) rotate(-77deg);
+
+	}
+}
+@keyframes move_pizza {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	}
+}
+@keyframes move_pop {
+	from{	
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	}
+
+}
+@keyframes move_cookie {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	}
+}
+@keyframes move_soda {
+	from{ 	
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	} 
+}
+@keyframes move_icecream {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	
+	}
+}
+@keyframes move_hotdog {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	
+	}
+}
+@keyframes move_hamburger {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	}
+	
+}
+
+@keyframes move_fries {
+	from{
+		transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	}
+	
+}
+@keyframes move_donut {
+	from{
+			transform: translate(0,0); 
+	}
+	to {
+		transform: translate(0,525px); 
+	
+	}
+}
+@keyframes startover{
+  from {
+    top:-50px;
+    right:10px;
+  }
+  to {
+    top:900px
+    right:10px;
+  }
+
+}
 
   </style>
+
   
 </head>
 
@@ -169,6 +383,13 @@
 		<div class="junkfood hamburger"><img src="hamburger.png" /></div>
 		<div class="junkfood fries"><img src="fries.png" /></div>
 		<div class="junkfood donut"><img src="donut.png" /></div>
+	</div>
+
+
+<div class="startover"> 
+		<a href="index.html">
+		<img src="startover.png" />
+
 	</div>
 
 </div>
