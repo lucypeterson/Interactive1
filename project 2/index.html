@@ -10,16 +10,23 @@
       
     background-size: contain;
     background-repeat: repeat-center;
+	background-color:white;
+	background-image: linear-gradient(90deg, rgba(206,121,121,.29) 30%, transparent 1%),
+	linear-gradient(rgba(206,121,121,.29) 30%, transparent 1%);
+	background-size:50px 50px;  
+	
+		  	
   } 
   .stage {
 	  	border: 0px;
-	  	background-color: white;
 	  	width: 1200px;
-	  	height: 1000px;
-	  	margin: 100px auto;
-	  	overflow: hidden; /* hide nested elements when it is outside the stage */
+	  	height: 850px;
+	  	margin: 20px auto;
+	  	overflow: hidden; 
 	  	position: relative;
-	  	
+
+
+
 	  }
 .subsidize {
 	text-align: center;
@@ -30,50 +37,51 @@
 
 }
 .letter.s {
-	width: 100px;
-	animation: move_letter_s 2s forwards;
+	width: 125px;
+	animation: move_letter_s 1.75s forwards;
+	animation-delay: 1s;
 	
 }
 .letter.u {
-	width: 100px;
-	animation: move_letter_u 2s forwards;
-	animation-delay: 1s;
-}
-.letter.b {
-	width: 100px;
-	animation: move_letter_b 2s forwards;
-	animation-delay: 2s;
-}
-.letter.s2 {
-	width: 100px;
-	animation: move_letter_ss 2s forwards;
-	animation-delay: 3s;
-}
-.letter.i {
-	width: 100px;
-	animation: move_letter_i 2s forwards;
-	animation-delay: 4s;
-}
-.letter.d {
-	width: 100px;
-	animation: move_letter_d 2s forwards;
+	width: 125px;
+	animation: move_letter_u 1.75s forwards;
 	animation-delay: 5s;
 }
-.letter.i2 {
-	width: 100px;
-	animation: move_letter_ii 2s forwards;
+.letter.b {
+	width: 125px;
+	animation: move_letter_b 1.75s forwards;
+	animation-delay: 3s;
+}
+.letter.s2 {
+	width: 125px;
+	animation: move_letter_ss 1.75s forwards;
 	animation-delay: 6s;
 }
-.letter.z {
-	width: 100px;
-	animation: move_letter_z 2s forwards;
+.letter.i {
+	width: 125px;
+	animation: move_letter_i 1.75s forwards;
+	animation-delay: 8s;
+}
+.letter.d {
+	width: 125px;
+	animation: move_letter_d 1.75s forwards;
+	animation-delay: 2s;
+}
+.letter.i2 {
+	width: 125px;
+	animation: move_letter_ii 1.75s forwards;
 	animation-delay: 7s;
 }
+.letter.z {
+	width: 125px;
+	animation: move_letter_z 1.75s forwards;
+	animation-delay: 9s;
+}
 .letter.e {
-	width: 100px;
-	margin:15px;
-	animation: move_letter_e 2s forwards;
-	animation-delay: 8s;
+	width: 125px;
+	margin:10px;
+	animation: move_letter_e 1.75s forwards;
+	animation-delay: 4s;
 }
 
 .letter img {
@@ -85,21 +93,23 @@
 }
 
 .real img {
-	width: 350px;
+	width: 450px;
 	margin-right: 50px;
 	
 }
 
 .food img {
-	width:350px;
+	width:400px;
 	
 }
 .food, .real{
 	display: inline-block;
+	animation: realfood 12s forwards;
+	
 }
 .bad {
 	text-align: center;
-	margin-top: 300px;
+	margin-top: 100px;
 }
 
 .junkfood {
@@ -110,65 +120,70 @@
 	width: 100%;
 }
 .junkfood.pizza  {
-	width: 100px;
+	width: 125px;
 	margin:-5px;
 	animation:move_pizza 2s  forwards;
-	animation-delay: 1.6s;
+	animation-delay: 2s;
 	
 }
 .junkfood.pop  {
-	width: 100px;
+	width: 125px;
 	animation:move_pop 2s  forwards;
-	animation-delay: 2.6s;
+	animation-delay: 6s;
 	
 }
 .junkfood.cookie  {
-	width: 100px;
+	width: 125px;
 	animation:move_cookie 2s  forwards;
-	animation-delay: 3.6s;
+	animation-delay: 4s;
 	
 }
 .junkfood.soda  {
-	width: 100px;
+	width: 125px;
 	animation:move_soda 2s  forwards;
-	animation-delay: 4.6s;
+	animation-delay: 7s;
 	
 }
 .junkfood.icecream  {
-	width: 100px;
+	width: 125px;
 	animation:move_icecream 2s  forwards;
-	animation-delay: 5.6s;
+	animation-delay: 9s;
 }
 .junkfood.hotdog  {
-	width: 100px;
+	width: 125px;
 	margin:7px;
 	animation:move_hotdog 2s  forwards;
-	animation-delay: 6.6s;
+	animation-delay: 3s;
 	
 }
 .junkfood.hamburger  {
-	width: 100px;
+	width: 125px;
 	animation:move_hamburger 2s  forwards;
-	animation-delay: 7.6s;
+	animation-delay: 8s;
 	
 }
 .junkfood.fries  {
-	width: 100px;
+	width: 125px;
 	animation:move_fries 2s  forwards;
-	animation-delay: 8.6s;
+	animation-delay: 10s;
 	
 }
 .junkfood.donut  {
-	width: 100px;
+	width: 124px;
 	animation:move_donut 2s  forwards;
-	animation-delay: 9.6s;
+	animation-delay: 5s;
 	
 }  
 .startover {
-	width: 10px;
-	align:right;
-	animation:startover 1s forwards;
-	animation-delay: 10.5s;
+	animation:startover 3s forwards;
+	animation-delay: 9.8s;
+	position: absolute;
+	width: 15%;
+	margin-top: 0px;
+	top:0;
+	right: 10px;
+	transform: rotate(-32deg);
+	opacity: 0;
 
 }
 
@@ -177,7 +192,7 @@
     transform: translate(0,0) rotate(0deg);
   }
   to {
-    transform: translate(0,525px) rotate(80deg);
+    transform: translate(0,450px) rotate(80deg);
   }
 
 }
@@ -187,7 +202,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(180deg);
+		transform: translate(0,450px) rotate(180deg);
 	}
 }
 @keyframes move_letter_b {
@@ -195,7 +210,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-90deg);
+		transform: translate(0,450px) rotate(-90deg);
 
 	}
 }
@@ -204,7 +219,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-57deg);
+		transform: translate(0,450px) rotate(-57deg);
 
 	}
 
@@ -214,7 +229,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-94deg);
+		transform: translate(0,450px) rotate(49deg);
 
 	}
 
@@ -224,7 +239,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-87deg);
+		transform: translate(0,450px) rotate(-87deg);
 
 	}
 
@@ -234,7 +249,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(180deg);
+		transform: translate(0,450px) rotate(-150deg);
 	}
 }
 @keyframes move_letter_z {
@@ -242,7 +257,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-84deg);
+		transform: translate(0,450px) rotate(-84deg);
 	}
 }
 @keyframes move_letter_e {
@@ -250,7 +265,7 @@
 		transform: translate(0,0) rotate(0deg);
 	}
 	to {
-		transform: translate(0,525px) rotate(-77deg);
+		transform: translate(0,450px) rotate(-130deg);
 
 	}
 }
@@ -267,7 +282,7 @@
 		transform: translate(0,0); 
 	}
 	to {
-		transform: translate(0,525px); 
+		transform: translate(0,525px); .
 	}
 
 }
@@ -326,7 +341,7 @@
 }
 @keyframes move_donut {
 	from{
-			transform: translate(0,0); 
+		transform: translate(0,0); 
 	}
 	to {
 		transform: translate(0,525px); 
@@ -334,16 +349,30 @@
 	}
 }
 @keyframes startover{
-  from {
+  0% {
     top:-50px;
     right:10px;
   }
-  to {
-    top:900px
+  95% {
+  	opacity: 0;
+  }
+  100% {
+  	opacity: 100;
+    top:10px;
     right:10px;
   }
 
 }
+@keyframes realfood {
+	0% {
+		transform: scale(.25);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
 
   </style>
 
@@ -386,10 +415,9 @@
 	</div>
 
 
-<div class="startover"> 
-		<a href="index.html">
-		<img src="startover.png" />
-
+	<div class="startover"> 
+			<a href="index.html"/>
+			<img src="startover.png" />
 	</div>
 
 </div>
