@@ -1,0 +1,91 @@
+
+<!doctype html>
+
+<html lang="en">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <title>
+    Exercise 4
+  </title>
+  <style>
+
+    body{
+      background-color: green; 
+    }
+
+  	.container {
+  		width: 300px;
+  		margin: 150px auto; /* magical centering code!!! */ 
+      position: relative;
+  	}
+
+    .photo {
+    	width: 300px;
+    	cursor: pointer;
+    	position: absolute;
+      top:0px;
+      left: 0px;
+    }
+
+    .b01 {
+    	transform: rotate(0deg);
+    }
+
+    .b02 {
+    	transform: rotate(5deg);
+    }
+
+    .b03 {
+    	transform: rotate(10deg);
+    }
+
+  </style>
+
+  <script>
+    $(document).ready(function() {
+
+  		$(".photo").draggable();
+
+  		$(".photo.b01").click(function(){
+
+  			$(this).animate({
+  				top: '+=300',       /*dont need px value, but neec '"*/
+				  
+          width: '+=300px'
+				},500);
+
+  		});
+
+  		$(".photo.b02").click(function(){
+
+  			$(this).animate({
+  				top: '-=50',
+				  left: '-=300'
+				},500);
+
+  		});
+
+  		$(".photo.b03").click(function(){
+
+  			$(this).animate({
+  				top: '+=50',
+				  left: '+=300'
+				},500);
+
+  		});
+
+    });
+  </script>
+</head>
+
+<body>
+  	
+  <div class="container">
+	  <img src="bird01.png" class="photo b01" />
+	  <img src="bird02.png" class="photo b02" />
+	  <img src="bird03.png" class="photo b03" />
+  </div>
+
+</body>
+</html>
