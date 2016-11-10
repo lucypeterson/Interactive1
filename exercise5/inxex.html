@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
+		
+	</script>
+ 
+  <title>
+  	Exercise 5
+  </title>
+
+  <style> 
+
+  	body {
+  		margin:0;
+  		
+  	}
+
+  	.box {
+  		height: 800px;
+  		background-size: cover;
+  		background-position: center center;
+  		text-align: center;
+  		padding: 15px;
+  		color:#FFF;
+  		text-decoration-style: bold;
+  		font-size: xx-large;
+  		font-family: sans-serif;
+
+
+  	}
+  	.w1 {background-image: url('w1.jpg');}
+  	.w2 {background-image: url('w2.jpg');}
+  	.w3 {background-image: url('w3.jpg');}
+  	.w4 {background-image: url('w4.jpg');}
+  	.w5 {background-image: url('w5.jpg');}
+
+  	.nav {
+  		position: fixed;
+  		top: 100px;
+  		left: 0;
+  		background-color: #FFF;
+  		padding: 15px;
+  	}
+
+  	button {
+  		padding: 10px;
+  		cursor: pointer;
+  		font-size: 1.0em;
+  	}
+
+
+  </style>
+
+  <script>
+  	
+  	$(document).ready(function(){
+
+  		$("#btn-w1").click(function(){
+
+  			$("html, body").animate({
+
+  				scrollTop: $(".w1").offset().top 
+  			}, 1000);
+
+  		})
+  		
+  		$("#btn-w2").click(function() {
+
+  			$("html, body").animate({
+
+  				scrollTop: $(".w2").offset().top 
+  			}, 1000);
+
+  		})
+
+  		$("#btn-w3").click(function() {
+
+  			$("html, body").animate({
+
+  				scrollTop: $(".w3").offset().top 
+  			}, 1000);
+
+  		})
+
+  		$("#btn-w4").click(function() {
+
+  			$("html, body").animate({
+
+  				scrollTop: $(".w4").offset().top 
+  			}, 1000);
+
+  		})
+
+  		$("#btn-w5").click(function() {
+
+  			$("html, body").animate({
+
+  				scrollTop: $(".w5").offset().top 
+  			}, 1000);
+
+  		})
+
+  	});
+
+
+  </script>
+
+</head>
+
+<body>
+
+	<div class="nav">
+		
+		<button id="btn-w1">w1</button>
+		<button id="btn-w2">w2</button>
+		<button id="btn-w3">w3</button>
+		<button id="btn-w4">w4</button>
+		<button id="btn-w5">w5</button>
+
+	</div>
+	<div class="box w1">
+		water 1
+	</div>
+	<div class="box w2">
+		water 2
+	</div>
+	<div class="box w3">
+		water 3
+	</div>
+	<div class="box w4">
+		water 4
+	</div>
+	<div class="box w5 ">
+		water 5
+	</div>
+	
+
+</body>
+</html>
