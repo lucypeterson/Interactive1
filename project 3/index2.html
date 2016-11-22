@@ -2,10 +2,10 @@
 <html>
 
 <head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js">
-		
-	</script>
- 
+	<script src="./jquery.min.js"></script>
+    <link rel="stylesheet" href="./fancy box/source/jquery.fancybox.css?v=2.1.5" type="text/css" media="screen" />
+    <script type="text/javascript" src="./fancy box/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+
   <title>
   	Project 3
   </title>
@@ -13,12 +13,11 @@
   <style> 
      #rig {
         width: auto;
-        white-space: nowrap;
         padding:0;
         font-size:5;
         list-style:none;
         background-color:#FFF;
-        margin-top: 250px;
+        
     }
 
     #rig div {
@@ -81,7 +80,7 @@
         font-size:18px;
         font-weight:bold;
         font-family: 'helvetica', sans-serif;
-        font-weight:normal;!important;
+        font-weight:normal!important;
         top:0%;
         color:black;
         opacity:0;
@@ -95,14 +94,43 @@
         opacity:0.9;
     }
 
+    .fancybox-skin {
+        background: #d36183;
 
+    }
+
+    .fancybox-title {
+        font-size: 15px;
+        color: black;
+        padding:15px;
+    }
+
+    .caption {
+        display: none;
+    }
+    .fancybox-image {
+       
+        margin:auto;
+    }
 
 
   </style>
 
   <script>
   	
-  	
+  	$(document).ready(function() {
+        $(".fancybox").attr('rel', 'gallery').fancybox({
+            beforeShow: function () {
+                this.title = this.element[0].querySelector('.caption').innerHTML;
+            },
+            helpers: {
+                title : {
+                    type : 'inside' // 'float', 'inside', 'outside' or 'over'
+                }
+            }, 
+            maxWidth: "300px"
+        });
+    });
 
 
   </script>
@@ -112,298 +140,341 @@
 <body>
   <div id="rig">
     <div>
-        <a class="rig-cell" href="page1.html">
+        <a class="rig-cell fancybox" href="2.jpg">
             <img class="rig-img" src="2.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/19/15 <br> 5:24 PM <br> Washington, DC </span>
-            <a href= "page1.html"></a>
+            <span class="caption">Taken in the study room on 3 South, Anderson Hall, American University. Procrastinating but feeling cute for the first time in a long time, the cold was getting to me.</span>
+           
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page2.html">
+       <a class="rig-cell fancybox" href="3.jpg">
             <img class="rig-img" src="3.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/23/15 <br> 7:49 PM <br> Washington, DC </span>
+            <span class="caption">This is a caption.</span>
+            
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page3.html">
+        <a class="rig-cell fancybox" href="4.jpg">
             <img class="rig-img" src="4.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/25/15 <br> 4:55 <br> Washington, DC </span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page4.html">
+        <a class="rig-cell fancybox" href="7.jpg">
             <img class="rig-img" src="7.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/7/15 <br> 8:23 AM <br> Washington, DC </span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page5.html">
+       <a class="rig-cell fancybox" href="8.jpg">
             <img class="rig-img" src="8.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/14/15 <br> 8:33 AM <br> Washington, DC </span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page6.html">
+        <a class="rig-cell fancybox" href="11.jpg">
             <img class="rig-img" src="11.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/7/15 <br> 2:58 PM <br> Mill Valley, CA </span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page7.html">
+        <a class="rig-cell fancybox" href="12.jpg">
             <img class="rig-img" src="12.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/19/15 <br> 11:02 AM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page8.html">
+        <a class="rig-cell fancybox" href="13.jpg">
             <img class="rig-img" src="13.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/13/15 <br> 6:16 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page9.html">
+        <a class="rig-cell fancybox" href="14.jpg">
             <img class="rig-img" src="14.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/21/15 <br> 9:19 AM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page10.html">
+        <a class="rig-cell fancybox" href="15.jpg">
             <img class="rig-img" src="15.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/11/15 <br> 6:15 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page11.html">
+        <a class="rig-cell fancybox" href="16.jpg">
             <img class="rig-img" src="16.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/24/15 <br> 12:11 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-        <a class="rig-cell" href="page12.html">
+        <a class="rig-cell fancybox" href="18.jpg">
             <img class="rig-img" src="18.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/26/15 <br> 10:32 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
      <div>
-        <a class="rig-cell" href="page13.html">
+        <a class="rig-cell fancybox" href="19.jpg">
             <img class="rig-img" src="19.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">12/12/15 <br> 9:33 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
         <div>
-        <a class="rig-cell" href="page14.html">
+        <a class="rig-cell fancybox" href="20.jpg">
             <img class="rig-img" src="20.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">1/4/16 <br> 7:40 AM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page15.html">
+      <a class="rig-cell fancybox" href="21.jpg">
             <img class="rig-img" src="21.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">1/7/16 <br> 12:43 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-       <a class="rig-cell" href="page16.html">
+       <a class="rig-cell fancybox" href="24.jpg">
             <img class="rig-img" src="24.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/18/16 <br> 4:24 PM <br> San Francsico, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-     <a class="rig-cell" href="page17.html">
+     <a class="rig-cell fancybox" href="25.jpg">
             <img class="rig-img" src="25.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/28/16 <br> 4:19 PM <br> San Francsico, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-     <a class="rig-cell" href="page18.html">
+     <a class="rig-cell fancybox" href="27.jpg">
             <img class="rig-img" src="27.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">3/26/16 <br> 11:57 AM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page19.html">
+      <a class="rig-cell fancybox" href="29.jpg">
             <img class="rig-img" src="29.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/5/16 <br> 6:44 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page20.html">
+      <a class="rig-cell fancybox" href="30.jpg">
             <img class="rig-img" src="30.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/16/16 <br> 9:00 AM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page21.html">
+      <a class="rig-cell fancybox" href="31.jpg">
             <img class="rig-img" src="31.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/17/16 <br> 8:21 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page22.html">
+      <a class="rig-cell fancybox" href="33.jpg">
             <img class="rig-img" src="33.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/29/16 <br> 8:25 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page23.html">
+      <a class="rig-cell fancybox" href="34.jpg">
             <img class="rig-img" src="34.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/18/16 <br> 6:56 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page24.html">
+      <a class="rig-cell fancybox" href="35.jpg">
             <img class="rig-img" src="35.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/21/16 <br> 12:47 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page25.html">
+      <a class="rig-cell fancybox" href="37.jpg">
             <img class="rig-img" src="37.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/8/16 <br> 2:30 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
      <div>
-      <a class="rig-cell" href="page26.html">
+      <a class="rig-cell fancybox" href="38.jpg">
             <img class="rig-img" src="38.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/26/16 <br> 3:21 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page27.html">
+      <a class="rig-cell fancybox" href="40.jpg">
             <img class="rig-img" src="40.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/20/16 <br> 2:40 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page28.html">
+      <a class="rig-cell fancybox" href="41.jpg">
             <img class="rig-img" src="41.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/29/16 <br> 5:40 PM <br> Mill Valley, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
      <div>
-      <a class="rig-cell" href="page29.html">
+      <a class="rig-cell fancybox" href="42.jpg">
             <img class="rig-img" src="42.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/6/16 <br> 9:04 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
      <div>
-      <a class="rig-cell" href="page30.html">
+      <a class="rig-cell fancybox" href="43.jpg">
             <img class="rig-img" src="43.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/15/16 <br> 8:26 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="31">
+      <a class="rig-cell fancybox" href="44.jpg">
             <img class="rig-img" src="44.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/18/16 <br> 1:50 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page32.html">
+      <a class="rig-cell fancybox" href="45.jpg">
             <img class="rig-img" src="45.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/20/16 <br> 7:07 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
         <div>
-      <a class="rig-cell" href="page33.html">
+      <a class="rig-cell fancybox" href="47.jpg">
             <img class="rig-img" src="47.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/1/16 <br> 1:36 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
          <div>
-      <a class="rig-cell" href="page34.html">
+      <a class="rig-cell fancybox" href="48.jpg">
             <img class="rig-img" src="48.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/18/16 <br> 9:52 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page35.html">
+      <a class="rig-cell fancybox" href="49.jpg">
             <img class="rig-img" src="49.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/25/16 <br> 10:32 AM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
      <div>
-      <a class="rig-cell" href="page36.html">
+      <a class="rig-cell fancybox" href="50.jpg">
             <img class="rig-img" src="50.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/7/16 <br> 12:34 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page37.html">
+      <a class="rig-cell fancybox" href="51.jpg">
             <img class="rig-img" src="51.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/11/16 <br> 9:19 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page38.html">
+      <a class="rig-cell fancybox" href="52.jpg">
             <img class="rig-img" src="52.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/12/16 <br> 12:34 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page39.html">
+      <a class="rig-cell fancybox" href="54.jpg">
             <img class="rig-img" src="54.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/26/16 <br> 4:30 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
       <div>
-      <a class="rig-cell" href="page40.html">
+      <a class="rig-cell fancybox" href="55.jpg">
             <img class="rig-img" src="55.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/30/16 <br> 12:23 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
         <div>
-      <a class="rig-cell" href="page41.html">
+      <a class="rig-cell fancybox" href="56.jpg">
             <img class="rig-img" src="56.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/2/16 <br> 4:01 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell" href="page42.html">
+      <a class="rig-cell fancybox" href="57.jpg">
             <img class="rig-img" src="57.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/9/16 <br> 7:52 PM <br> San Francisco, CA</span>
+            <span class="caption">This is a caption.</span>
         </a>
     </div>
 
