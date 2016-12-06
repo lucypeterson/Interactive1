@@ -129,18 +129,19 @@
                 }
             }, 
                 maxWidth: "300px"
-                });
-                    $(".various").fancybox({
-                        maxWidth    : 500,
-                        maxHeight   : 300,
-                        fitToView   : false,
-                        width       : '70%',
-                        height      : '70%',
-                        autoSize    : false,
-                        closeClick  : false,
-                        openEffect  : 'none',
-                        closeEffect : 'none'
-                    });
+         });
+
+        $(".various").attr('rel', 'gallery').fancybox({
+            maxWidth    : 500,
+            maxHeight   : 700,
+            fitToView   : false,
+            width       : '70%',
+            height      : '80%',
+            autoSize    : false,
+            closeClick  : false,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
     });
 
 
@@ -151,17 +152,26 @@
 
 <body>
   <div id="rig">
+     <div>
+       <a class="rig-cell various" data-fancybox-type="iframe" href="winter2015.html">
+            <img class="rig-img" src="winter2015.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
+
     <div>
        <a class="rig-cell various" data-fancybox-type="iframe" href="page1.html">
             <img class="rig-img" src="2.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/19/15 <br> 5:24 PM <br> Washington, DC </span>
-            <span class="caption">Taken in the study room on 3 South, Anderson Hall, American University. Procrastinating but feeling cute for the first time in a long time, the cold was getting to me.</span>
+            
            
         </a>
     </div>
     <div>
-       <a class="rig-cell fancybox" href="3.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page2.html">
             <img class="rig-img" src="3.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/23/15 <br> 7:49 PM <br> Washington, DC </span>
@@ -170,15 +180,31 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="4.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page3.html">
             <img class="rig-img" src="4.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">2/25/15 <br> 4:55 <br> Washington, DC </span>
+            <span class="rig-text">2/25/15 <br> 4:55 PM <br> Washington, DC </span>
             <span class="caption">Back in the study room, procrastinating again. </span>
         </a>
     </div>
+      <div>
+        <a class="rig-cell various" data-fancybox-type="iframe" href="3half.html">
+            <img class="rig-img" src="5.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">3/1/15 <br> 8:01 PM <br> Washington, DC </span>
+            <span class="caption">Still in the darkest days. Winter sucks. </span>
+        </a>
+    </div>
+      <div>
+        <a class="rig-cell various" data-fancybox-type="iframe" href="spring2015.html">
+            <img class="rig-img" src="spring2015.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"> </span>
+            <span class="caption"> </span>
+        </a>
+    </div>
     <div>
-        <a class="rig-cell fancybox" href="7.jpg">
+         <a class="rig-cell various" data-fancybox-type="iframe" href="page4.html">
             <img class="rig-img" src="7.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/7/15 <br> 8:23 AM <br> Washington, DC </span>
@@ -186,7 +212,7 @@
         </a>
     </div>
     <div>
-       <a class="rig-cell fancybox" href="8.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page5.html">
             <img class="rig-img" src="8.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/14/15 <br> 8:33 AM <br> Washington, DC </span>
@@ -194,7 +220,23 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="11.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="pagefivehalf.html">
+            <img class="rig-img" src="9.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">4/27/15 <br>  4:55 PM <br> Washington, DC </span>
+            <span class="caption">Spending finals trying to wirte a thesis paper in the library. I'm struggling and feeling a lot of emotions about leaving. Little did I know it was really the end.</span>
+        </a>
+    </div>
+     <div>
+       <a class="rig-cell various" data-fancybox-type="iframe" href="summer2015.html">
+            <img class="rig-img" src="summer2015.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
+    <div>
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page6.html">
             <img class="rig-img" src="11.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/7/15 <br> 2:58 PM <br> Mill Valley, CA </span>
@@ -202,7 +244,7 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="12.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page7.html">
             <img class="rig-img" src="12.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/19/15 <br> 11:02 AM <br> Mill Valley, CA</span>
@@ -210,7 +252,7 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="13.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page8.html">
             <img class="rig-img" src="13.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/13/15 <br> 6:16 PM <br> Mill Valley, CA</span>
@@ -218,7 +260,7 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="14.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page9.html">
             <img class="rig-img" src="14.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/21/15 <br> 9:19 AM <br> Mill Valley, CA</span>
@@ -226,23 +268,39 @@
         </a>
     </div>
     <div>
-        <a class="rig-cell fancybox" href="15.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page10.html">
             <img class="rig-img" src="15.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/11/15 <br> 6:15 PM <br> Mill Valley, CA</span>
             <span class="caption">I stole this beanie from Chris at the beginning of the summer. Now he isn’t texting me back.</span>
         </a>
     </div>
+     <div>
+       <a class="rig-cell various" data-fancybox-type="iframe" href="fall2015.html">
+            <img class="rig-img" src="fall2015.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
     <div>
-        <a class="rig-cell fancybox" href="16.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page11.html">
             <img class="rig-img" src="16.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/24/15 <br> 12:11 PM <br> San Francisco, CA</span>
             <span class="caption">First day alone in my new apartment, in my new life. Not quite sure what to do with myself. Already feeling kind of lost and lonely. </span>
         </a>
     </div>
+      <div>
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page11half.html">
+            <img class="rig-img" src="17.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text">9/27/15 <br> 10:13 AM <br> San Francisco, CA</span>
+            <span class="caption">Not so sure about this new life, I don't feel comfortable being so alone, I used to be so dependent on the people around me and now I am lonely, but at least independnt. Mad told me that Chris and them didn't become friends until Haloween so here's hoping I meet my lifelong friends by then. Doesn't seem like the oulooks are great.</span>
+        </a>
+    </div>
     <div>
-        <a class="rig-cell fancybox" href="18.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page12.html">
             <img class="rig-img" src="18.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/26/15 <br> 10:32 AM <br> San Francisco, CA</span>
@@ -250,7 +308,7 @@
         </a>
     </div>
      <div>
-        <a class="rig-cell fancybox" href="19.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page13.html">
             <img class="rig-img" src="19.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">12/12/15 <br> 9:33 PM <br> Mill Valley, CA</span>
@@ -258,7 +316,7 @@
         </a>
     </div>
         <div>
-        <a class="rig-cell fancybox" href="20.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="page14.html">
             <img class="rig-img" src="20.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">1/4/16 <br> 7:40 AM <br> Mill Valley, CA</span>
@@ -266,15 +324,23 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="21.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page15.html">
             <img class="rig-img" src="21.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">1/7/16 <br> 12:43 PM <br> Mill Valley, CA</span>
             <span class="caption">Feeling really sick, tying to work on my piece for the show. I have to pick up Nat later and I know we’ll get in a fight about it, and I’m not feeling up to it. </span>
         </a>
     </div>
+     <div>
+       <a class="rig-cell various" data-fancybox-type="iframe" href="winter2016.html">
+            <img class="rig-img" src="winter2016.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
       <div>
-       <a class="rig-cell fancybox" href="24.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page16.html">
             <img class="rig-img" src="24.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/18/16 <br> 4:24 PM <br> San Francsico, CA</span>
@@ -287,6 +353,14 @@
             <span class="rig-overlay"></span>
             <span class="rig-text">2/28/16 <br> 4:19 PM <br> San Francsico, CA</span>
             <span class="caption">This is my routine, and I don’t think I love it. It’s very lonely coming home and being alone until I fall asleep and have to wake up and do it all over again. </span>
+        </a>
+    </div>
+      <div>
+        <a class="rig-cell fancybox" href="spring2016.jpg">
+            <img class="rig-img" src="spring2016.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
         </a>
     </div>
       <div>
@@ -329,6 +403,14 @@
             <span class="caption">Day of my First Year Review, I woke up early to go over my presentation and make myself look good. I haven’t done my hair or put on makeup in months and I was feelin myself. </span>
         </a>
     </div>
+     <div>
+       <a class="rig-cell fancybox" href="summer2016.jpg">
+            <img class="rig-img" src="summer2016.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
     <div>
       <a class="rig-cell fancybox" href="34.jpg">
             <img class="rig-img" src="34.jpg">
@@ -417,6 +499,14 @@
             <span class="caption">School starts this week and I haven’t made art in ages. Trying desperately to pull myself out of my creative rut and make something!!</span>
         </a>
     </div>
+     <div>
+       <a class="rig-cell fancybox" href="fall2016.jpg">
+            <img class="rig-img" src="fall2016.jpg">
+            <span class="rig-overlay"></span>
+            <span class="rig-text"></span>
+            <span class="caption"></span>
+        </a>
+        </div>
          <div>
       <a class="rig-cell fancybox" href="48.jpg">
             <img class="rig-img" src="48.jpg">
