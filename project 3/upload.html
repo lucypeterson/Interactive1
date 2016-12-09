@@ -1,0 +1,128 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+
+  
+  <title>
+    upload  
+  </title>
+  <style>
+
+      .outsidebox {
+          width: 800px;
+          padding: 15px; 
+          border-radius: 10px;
+          background-color:#d36183;
+          margin:auto;
+          font-family: 'helvetica', sans-serif;
+
+               }
+      
+
+      .title {
+        text-align: center;
+        margin-top:-10px;
+        margin:-10px;
+        margin-bottom:5px;
+        text-align: center;
+        font-variant: small-caps;
+      	letter-spacing: 2px;
+
+      }
+
+      .content {
+      	display: flex;
+      }
+      .options input {
+      	width: 33%
+      	margin: 15px;
+      	font-variant: small-caps;
+      	letter-spacing: 2px;
+      	margin-bottom: 20px;
+      	padding-left:2px;
+
+      }
+
+      .description {
+      	flex: 1;
+      	margin-left:20px;
+      }
+
+      
+    .image {
+    	flex-basis:40%;
+    	
+    
+    }
+    .image img {
+    	width: 100%;
+    	border-radius: 10px;
+    }
+    .content .description {
+    	background: #FFF;
+    	border-radius: 10px;
+    }
+     
+     .buttons {
+     	text-align: center;
+     	margin-top:20px;
+     	
+
+     }
+     .buttons button {
+
+     	font-size: 10px;
+     	font-variant: small-caps;
+      	letter-spacing: 1px
+
+     }
+     
+
+     textarea::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+      	font-variant: small-caps;
+      	letter-spacing: 2px;
+	}
+	textarea::-moz-placeholder { /* Firefox 19+ */
+	  font-variant: small-caps;
+      	letter-spacing: 2px;
+	}
+	textarea:-ms-input-placeholder { /* IE 10+ */
+	 font-variant: small-caps;
+      	letter-spacing: 2px;
+	}
+	textarea:-moz-placeholder { /* Firefox 18- */
+	  font-variant: small-caps;
+      	letter-spacing: 2px;
+	}
+	      
+	textarea{
+		border: none;
+		padding:10px;
+	}
+
+
+  </style>
+
+
+<body>
+	<div class="outsidebox">
+	<div class="title"><h3>edit post details</h3></div>
+	<div class="options">
+		<input type="text" id="date" placeholder="date">
+		<input type="text" id="time" placeholder="time">
+		<input type="text" id="location" placeholder="location">
+	</div>
+	<div class="content">
+		<div class="image"><img src="29.jpg"></div>
+		<textarea class="description" id= "description" placeholder="description"></textarea>
+	</div>
+	<div class="buttons">
+		<button>cancel</button>
+		<button>save</button>
+		
+	</div>
+	</div>
+
+</body>

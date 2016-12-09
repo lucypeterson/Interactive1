@@ -7,22 +7,29 @@
     <script type="text/javascript" src="./fancy box/source/jquery.fancybox.pack.js?v=2.1.5"></script>
 
   <title>
-  	Project 3
+  	Moments in Selfies
   </title>
 
   <style> 
+
+    .header {
+
+
+    }
      #rig {
         width: auto;
-        padding:0;
+        padding:15px;
+        margin:auto;
         font-size:5;
         list-style:none;
-        background-color:#FFF;
+        background-color:#d36183;
         
     }
 
     #rig div {
       width: 200px;
       display: inline-block;
+      margin:auto;
     }
     
         /* The wrapper for each item */
@@ -36,6 +43,7 @@
     .rig-img {
         display:block;
         width: 100%;
+        margin:;
         height: auto;
         border:none;
         transform:scale(1);
@@ -112,6 +120,11 @@
        
         margin:auto;
     }
+    img.bw {
+        -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+        filter: grayscale(100%);
+            }
+
 
 
   </style>
@@ -119,6 +132,8 @@
   <script>
   	
   	$(document).ready(function() {
+
+
         $(".fancybox").attr('rel', 'gallery').fancybox({
             beforeShow: function () {
                 this.title = this.element[0].querySelector('.caption').innerHTML;
@@ -142,6 +157,20 @@
             openEffect  : 'none',
             closeEffect : 'none'
         });
+         $(".single").attr('rel', 'gallery').fancybox({
+            maxWidth    : 500,
+            maxHeight   : 700,
+            fitToView   : false,
+            width       : '70%',
+            height      : '80%',
+            autoSize    : false,
+            closeClick  : false,
+            openEffect  : 'none',
+            closeEffect : 'none'
+        });
+
+
+       
     });
 
 
@@ -151,6 +180,12 @@
 </head>
 
 <body>
+    <div class="header">
+        <a class="rig-cell single" data-fancybox-type="iframe" href="header.html">
+        <img src="header.jpg">
+        <span class="caption"></span>
+        </a>
+    </div>
   <div id="rig">
      <div>
        <a class="rig-cell various" data-fancybox-type="iframe" href="winter2015.html">
@@ -348,7 +383,7 @@
         </a>
     </div>
       <div>
-     <a class="rig-cell fancybox" href="25.jpg">
+     <a class="rig-cell various" data-fancybox-type="iframe" href="page17.html">
             <img class="rig-img" src="25.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">2/28/16 <br> 4:19 PM <br> San Francsico, CA</span>
@@ -356,7 +391,7 @@
         </a>
     </div>
       <div>
-        <a class="rig-cell fancybox" href="spring2016.jpg">
+        <a class="rig-cell various" data-fancybox-type="iframe" href="spring2016.html">
             <img class="rig-img" src="spring2016.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text"></span>
@@ -364,7 +399,7 @@
         </a>
     </div>
       <div>
-     <a class="rig-cell fancybox" href="27.jpg">
+     <a class="rig-cell various" data-fancybox-type="iframe" href="page18.html">
             <img class="rig-img" src="27.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">3/26/16 <br> 11:57 AM <br> Mill Valley, CA</span>
@@ -372,15 +407,15 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="29.jpg">
-            <img class="rig-img" src="29.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page19.html">
+            <img class="rig-img bw" src="29.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/5/16 <br> 6:44 PM <br> San Francisco, CA</span>
             <span class="caption"></span>
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="30.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page20.html">
             <img class="rig-img" src="30.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/16/16 <br> 9:00 AM <br> Mill Valley, CA</span>
@@ -388,7 +423,7 @@
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="31.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page21.html">
             <img class="rig-img" src="31.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/17/16 <br> 8:21 PM <br> Mill Valley, CA</span>
@@ -396,7 +431,7 @@
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="33.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page22.html">
             <img class="rig-img" src="33.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">4/29/16 <br> 8:25 AM <br> San Francisco, CA</span>
@@ -404,7 +439,7 @@
         </a>
     </div>
      <div>
-       <a class="rig-cell fancybox" href="summer2016.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="summer2016.html">
             <img class="rig-img" src="summer2016.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text"></span>
@@ -412,7 +447,7 @@
         </a>
         </div>
     <div>
-      <a class="rig-cell fancybox" href="34.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page23.html">
             <img class="rig-img" src="34.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/18/16 <br> 6:56 PM <br> Mill Valley, CA</span>
@@ -420,7 +455,7 @@
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="35.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page24.html">
             <img class="rig-img" src="35.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">5/21/16 <br> 12:47 PM <br> Mill Valley, CA</span>
@@ -428,7 +463,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="37.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page25.html">
             <img class="rig-img" src="37.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/8/16 <br> 2:30 PM <br> San Francisco, CA</span>
@@ -436,7 +471,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="38.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page26.html">
             <img class="rig-img" src="38.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">6/26/16 <br> 3:21 PM <br> San Francisco, CA</span>
@@ -444,7 +479,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="40.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page27.html">
             <img class="rig-img" src="40.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/20/16 <br> 2:40 PM <br> Mill Valley, CA</span>
@@ -452,7 +487,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="41.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page28.html">
             <img class="rig-img" src="41.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">7/29/16 <br> 5:40 PM <br> Mill Valley, CA</span>
@@ -460,7 +495,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="42.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page29.html">
             <img class="rig-img" src="42.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/6/16 <br> 9:04 AM <br> San Francisco, CA</span>
@@ -468,15 +503,15 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="43.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page30.html">
             <img class="rig-img" src="43.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/15/16 <br> 8:26 AM <br> San Francisco, CA</span>
-            <span class="caption">he endless workweek, too many double shifts, on the verge of a mental break down that totally happened Sunday night. In front of my crush. And customers.</span>
+            <span class="caption">The endless workweek, too many double shifts, on the verge of a mental break down that totally happened Sunday night. In front of my crush. And customers.</span>
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="44.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page31.html">
             <img class="rig-img" src="44.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/18/16 <br> 1:50 PM <br> San Francisco, CA</span>
@@ -484,7 +519,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="45.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page32.html">
             <img class="rig-img" src="45.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">8/20/16 <br> 7:07 PM <br> San Francisco, CA</span>
@@ -492,7 +527,7 @@
         </a>
     </div>
         <div>
-      <a class="rig-cell fancybox" href="47.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page33.html">
             <img class="rig-img" src="47.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/1/16 <br> 1:36 PM <br> San Francisco, CA</span>
@@ -500,7 +535,7 @@
         </a>
     </div>
      <div>
-       <a class="rig-cell fancybox" href="fall2016.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="fall2016.html">
             <img class="rig-img" src="fall2016.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text"></span>
@@ -508,7 +543,7 @@
         </a>
         </div>
          <div>
-      <a class="rig-cell fancybox" href="48.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page34.html">
             <img class="rig-img" src="48.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/18/16 <br> 9:52 AM <br> San Francisco, CA</span>
@@ -516,7 +551,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="49.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page35.html">
             <img class="rig-img" src="49.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">9/25/16 <br> 10:32 AM <br> San Francisco, CA</span>
@@ -524,7 +559,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="50.jpg">
+       <a class="rig-cell various" data-fancybox-type="iframe" href="page36.html">
             <img class="rig-img" src="50.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/7/16 <br> 12:34 PM <br> San Francisco, CA</span>
@@ -532,7 +567,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="51.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page37.html">
             <img class="rig-img" src="51.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/11/16 <br> 9:19 PM <br> San Francisco, CA</span>
@@ -540,7 +575,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="52.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page38.html">
             <img class="rig-img" src="52.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/12/16 <br> 12:34 PM <br> San Francisco, CA</span>
@@ -548,7 +583,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="54.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page39.html">
             <img class="rig-img" src="54.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/26/16 <br> 4:30 PM <br> San Francisco, CA</span>
@@ -556,7 +591,7 @@
         </a>
     </div>
       <div>
-      <a class="rig-cell fancybox" href="55.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page40.html">
             <img class="rig-img" src="55.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">10/30/16 <br> 12:23 PM <br> San Francisco, CA</span>
@@ -564,7 +599,7 @@
         </a>
     </div>
         <div>
-      <a class="rig-cell fancybox" href="56.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page41.html">
             <img class="rig-img" src="56.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/2/16 <br> 4:01 PM <br> San Francisco, CA</span>
@@ -572,7 +607,7 @@
         </a>
     </div>
     <div>
-      <a class="rig-cell fancybox" href="57.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page42.html">
             <img class="rig-img" src="57.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/9/16 <br> 7:52 PM <br> San Francisco, CA</span>
@@ -580,7 +615,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="58.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page43.html">
             <img class="rig-img" src="58.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/19/16 <br> 5:14 PM <br> San Francisco, CA</span>
@@ -588,7 +623,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="59.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page44.html">
             <img class="rig-img" src="59.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/24/16 <br> 6:24 PM <br> Mill Valley, CA</span>
@@ -596,7 +631,7 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="60.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page45.html">
             <img class="rig-img" src="60.jpg">
             <span class="rig-overlay"></span>
             <span class="rig-text">11/25/16 <br> 8:57 PM <br> San Francisco, CA</span>
@@ -604,11 +639,11 @@
         </a>
     </div>
      <div>
-      <a class="rig-cell fancybox" href="61.jpg">
+      <a class="rig-cell various" data-fancybox-type="iframe" href="page46.html">
             <img class="rig-img" src="61.jpg">
             <span class="rig-overlay"></span>
-            <span class="rig-text">11/25/16 <br> 8:57 PM <br> San Francisco, CA</span>
-            <span class="caption">Feeling pissed that everyone else got a Thanksgiving break and got to do fun things while I had to work..</span>
+            <span class="rig-text">11/28/16 <br> 8:57 PM <br> San Francisco, CA</span>
+            <span class="caption">Feeling pissed that everyone else got a Thanksgiving break and got to do fun things while I had to work.</span>
         </a>
     </div>
 
